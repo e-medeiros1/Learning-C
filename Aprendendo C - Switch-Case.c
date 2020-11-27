@@ -5,6 +5,12 @@
 int main()
 {
 
+    /*Para aceitar acentuações*/
+    
+    UINT CPAGE_UTF8 = 65001;
+    UINT CPAGE_DEFAULT = GetConsoleOutputCP();
+    SetConsoleOutputCP(CPAGE_UTF8);
+
     int idade;
     char bebidas;
 
